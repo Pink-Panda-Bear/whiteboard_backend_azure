@@ -19,7 +19,10 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['http://localhost:5173'],
+    'allowed_origins' => [
+        'http://localhost:5173',
+        'https://whiteboard1-fze2dkfwvgecfc.azurewebsites.net',
+    ],
 
     'allowed_origins_patterns' => [],
 

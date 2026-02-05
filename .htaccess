@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    # Preusmjerava sav promet u public mapu
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
