@@ -15,9 +15,13 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->statefulApi();
         // Dodaj CORS middleware na API rute
-        $middleware->api(prepend: [
+        $middleware->use([
             \Illuminate\Http\Middleware\HandleCors::class,
         ]);
+        /*
+        $middleware->api(prepend: [
+            \Illuminate\Http\Middleware\HandleCors::class,
+        ]);*/
 
         $middleware->alias([
             'verified' => \App\Http\Middleware\EnsureEmailIsVerified::class,

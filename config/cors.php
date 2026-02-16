@@ -25,7 +25,9 @@ return [
         'https://yellow-cliff-0cc703703.4.azurestaticapps.net',  // Azure Static Web App URL
     ],
 
-    'allowed_origins_patterns' => [],
+    'allowed_origins_patterns' => [
+        '/^https:\/\/.*\.azurestaticapps\.net$/',
+    ],
 
     'allowed_headers' => ['*'],
 
