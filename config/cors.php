@@ -19,7 +19,11 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => explode(',', env('ALLOWED_ORIGINS', 'http://localhost:5173')),
+    'allowed_origins' => [
+        'http://localhost:5173',
+        'https://whiteboard-frontend-two.vercel.app',
+        'https://whiteboard-xxxxx.azurestaticapps.net',  // Azure Static Web App URL
+    ],
 
     'allowed_origins_patterns' => [],
 
