@@ -23,6 +23,7 @@ return [
         'http://localhost:5173',
         'https://whiteboard-frontend-two.vercel.app',
         'https://yellow-cliff-0cc703703.4.azurestaticapps.net',  // Azure Static Web App URL
+        'http://whiteboard-frontend-aws.s3-website.eu-north-1.amazonaws.com',  // AWS
     ],
 
     'allowed_origins_patterns' => [
